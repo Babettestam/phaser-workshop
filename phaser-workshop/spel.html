@@ -1,0 +1,35 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+    <title>Phaser - Making your first game, part 9</title>
+    <script src="//cdn.jsdelivr.net/phaser/2.2.2/phaser.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+var oldscore = 0;
+var count = 0;
+
+var speler;
+var platforms;
+var cursors;
+</script>
+
+<script src="instellingen.js"></script>
+<script src="1-inladen.js"></script>
+<script src="2-maken.js"></script>
+<script src="3-herhalen.js"></script>
+
+
+<script type="text/javascript">
+    // Spel scherm aanmaken    breedte, hoogte
+    var game = new Phaser.Game(scherm_breedte, scherm_hoogte, Phaser.AUTO, '', { preload: inladen, create: aanmaken, update: herhalen });
+</script>
+</body>
+</html>
