@@ -5,16 +5,9 @@ function aanmaken() {
     // maakItem('item naam', start-posititie-x, start-positie-y);
     maakItem('speler', 50, 400);
 
-    //
     // Opdracht 3: Voeg 5 sterren toe aan het spel
-    //
 
-
-
-    //
     // Opdracht 5: Voeg score toe aan spel
-    //
-
 }
 
 
@@ -24,9 +17,9 @@ function aanmaken() {
 
 
 
-// 
+
+
 // Hieronder niets veranderen
-// 
 
 
 
@@ -78,14 +71,16 @@ function maakItem(item, start_x, start_y) {
             
             //  Speler zwaartekracht instellingen
             speler.body.bounce.y = 0.2; // Terugstuiteren bij vallen
-            speler.body.gravity.y = zwaartekracht; // Zwaartekracht waarde
+            speler.body.gravity.y = zwaartekrachtSpeler; // Zwaartekracht waarde
             speler.body.collideWorldBounds = true; // true -> kan niet voorbij de rand van het spel -> false kan wel voorbij rand
             break;
         case 'ster':
             stars.enableBody = true;
 
             var star = stars.create(start_x, start_y, 'ster');
-            star.body.gravity.y = zwaartekracht;
+            star.scale.setTo(ster_grootte, ster_grootte);
+
+            star.body.gravity.y = zwaartekrachtSter;
             star.body.bounce.y = 0.1 + Math.random() * 0.2;
 
             break;
@@ -97,7 +92,9 @@ function maakItem(item, start_x, start_y) {
             // vijand aanmaken
             vijanden.enableBody = true;
             var vijand = vijanden.create(start_x, start_y, 'vijand');
-            vijand.body.gravity.y = zwaartekracht;
+            vijand.scale.setTo(vijand_grootte, vijand_grootte);
+
+            vijand.body.gravity.y = zwaartekrachtVijand;
             break;
     }
 

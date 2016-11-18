@@ -9,17 +9,12 @@ function pijltje_naar_links() {
 }
 
 function pijltje_naar_rechts() {
-    //
     // Opdracht 1: Als pijltje naar rechts wordt ingedrukt moet hij naar rechts lopen (kijk hierboven)
-    // 
 
 }
 
 function pijltje_omhoog() {
-    //
     // Opdracht 2: Zorg ervoor dat de speler springt
-    // 
-
 }
 
 function pijltje_omlaag() {
@@ -27,15 +22,11 @@ function pijltje_omlaag() {
 }
 
 function speler_raakt_ster(speler, ster) {
-    //
     // Opdracht 4: verwijder de ster wanneer die wordt aangeraakt
-    // 
 
 
 
-    //
     // Opdracht 6: Verhoog de score als de ster is verzameld
-    // 
 
 
 }
@@ -45,9 +36,7 @@ function speler_raakt_ster(speler, ster) {
 
 
 
-// 
 // Hieronder niets veranderen
-// 
 
 
 
